@@ -1,0 +1,82 @@
+ *, *::after, *::before
+{
+    box-sizing: border-box;
+}
+.model-box 
+{
+    background-color: rgb(226, 224, 224);
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+}
+.model-header
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+}
+#open
+{
+    border-radius: 2px;
+    background-color: rgb(80, 172, 247);
+    color: whitesmoke;
+    width: 200px;
+    height: 30px;
+}
+.model-content
+{
+    z-index: 10px;
+    background-color: rgb(226, 224, 224);
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 10px;
+    width: 500px;
+    max-width: 80%;
+}
+.model-content.active
+{
+    transform: translate(-50%, -50%) scale(1);
+}
+.model-content-para
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.model-content-para .txt
+{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Cabin', sans-serif;
+}
+.model-content .cross-button #cross
+{
+    position: fixed;
+    transform: translate(475px, 4px);
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.act{
+    opacity: 0.5px;
+}
+.clr{
+    background-color: aqua;
+    opacity: 0.5;
+}
